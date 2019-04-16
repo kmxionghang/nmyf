@@ -3,7 +3,7 @@
 /**
  * Laravel-admin - admin builder based on Laravel.
  * @author z-song <https://github.com/z-song>
- *
+ * 扩展或者移除你的组件，或者引入前端资源
  * Bootstraper for Admin.
  *
  * Here you can remove builtin form field:

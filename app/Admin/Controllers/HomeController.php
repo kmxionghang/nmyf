@@ -16,6 +16,11 @@ class HomeController extends Controller
             ->header('Dashboard')
             ->description('Description...')
             ->row(Dashboard::title())
+//            ->breadcrumb(
+//                ['text' => '首页', 'url' => '/admin'],
+//                ['text' => '用户管理', 'url' => '/admin/users'],
+//                ['text' => '编辑用户']
+//            )
             ->row(function (Row $row) {
 
                 $row->column(4, function (Column $column) {
@@ -28,6 +33,12 @@ class HomeController extends Controller
 
                 $row->column(4, function (Column $column) {
                     $column->append(Dashboard::dependencies());
+                    $column->append(Dashboard::dependencies());
+                    $column->append(Dashboard::dependencies());
+                    $column->row(function(Row $row) {
+                        $row->column(6, '444');
+                        $row->column(6, '555');
+                    });
                 });
             });
     }
